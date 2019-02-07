@@ -1,0 +1,29 @@
+{
+    "name": "anwar/bulksmsbd",
+    "description": "Laravel integration of http://bulksmsbd.com",
+    "authors": [
+        {
+            "name": "Anwar Hussen",
+            "email": "anwar.hussen.pro@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Anwar\\Bulksmsbd\\BulksmsbdServiceProvider"
+            ],
+            "aliases": {
+                "SMSBD": "Anwar\\Bulksmsbd\\Facades\\SmsBD"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Anwar\\Bulksmsbd\\": "src/"
+        }
+    }
+}
