@@ -7,6 +7,12 @@
             "email": "anwar.hussen.pro@gmail.com"
         }
     ],
+    "keywords": [
+        "sms-api",
+        "smsbd",
+	"bulksms"
+    ],
+    "license": "MIT",
     "require": {
         "guzzlehttp/guzzle": "~6.0"
     },
