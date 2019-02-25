@@ -56,31 +56,31 @@ class BulkSmsBD
         ]);
 
         switch ((string)$response->getBody()) {
-            case  '1000':
+            case  1000:
                 throw new \Exception('Invalid user or Password', 1000);
                 break;
-            case  '1002':
+            case  1002:
                 throw new \Exception('Empty Number', 1002);
                 break;
-            case  '1003':
+            case  1003:
                 throw new \Exception('Invalid message or empty message', 1003);
                 break;
-            case  '1004':
+            case  1004:
                 throw new \Exception('Number should be 13 Digit', 1004);
                 break;
-            case  '1005':
+            case  1005:
                 throw new \Exception('Invalid number', 1005);
                 break;
-            case  '1006':
+            case  1006:
                 throw new \Exception('insufficient Balance', 1006);
                 break;
-            case  '1009':
+            case  1009:
                 throw new \Exception('Inactive Account', 1009);
                 break;
-            case  '1010':
+            case  1010:
                 throw new \Exception('Max number limit exceeded', 1010);
                 break;
-            case  '1101':
+            case  1101:
                 return true;
                 break;
         }
